@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
 body{
     margin: 0px;
     overflow-x: hidden;
@@ -12,32 +14,112 @@ body{
 }
 
 .start{
-    background-image: url('imagini/sydney.png');
+    background-image: url('../imagini/sydney.png');
     background-size: 100%;
-    background-color: #00000072;
+    background-color: #000000a3;
     background-blend-mode: darken;
     background-attachment: fixed;
     background-position-y: 200%;
 
+    cursor: default;
+    
+    margin-top: 70px;
     width: 100%;
     height: 90%;
 
     color: aliceblue;
 }
 
-.start img{
-    width: 100%;
-    height: 90%;
-    z-index: -1;
-    /* imag */
+.start .titlu{
+    text-align: center;
+    font-size: 5em;
+    /* font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic; */
+    font-family: "Alliance1","Alliance1HeaderFallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    font-style: italic;
+
+    color: #90CAF9;
+
+    /* pare rau de asta */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: titlu-inapoi 1s;
+    animation-fill-mode: both;
+}
+/* eh nimic mai jos*/
+.start .titlu:hover{
+    animation: titlu-inainte;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes titlu-inainte{
+    to{
+        font-size: 6em;
+    }
+}
+@keyframes titlu-inapoi{
+    from{
+        font-size: 6em;
+    }
+}
+/* nu a fost nimic acolo */
+
+
+.start .subtitlu{
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    /* de asemenea */
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.start .genuri{
+    width: 70%;
+
+    /* iar pare rau trebuie asejare in pagina frumoasa */
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* apoi spatiere mai ok */
+    display: flex;
+    justify-content: space-around;
+}
+.start .genuri a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
 }
 
+/* NEIMPORTANT DOAR DETALII */
 #scroll-jos{
     background-color: #000000;
-    height: 10%;
+    height: 15%;
     color: aliceblue;
     text-align: center;
     
+}
+.start .cerc{
+    width:50px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
 }
 
 .istorie{
