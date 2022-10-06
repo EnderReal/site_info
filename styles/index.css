@@ -1,9 +1,3 @@
-.sageata{
-    
-}
-
-/* nimic important sus */
-
 body{
     margin: 0px;
     overflow-x: hidden;
@@ -18,9 +12,9 @@ body{
 }
 
 .start{
-    background-image: url("/imagini/sydney.jpg");
+    background-image: url('imagini/sydney.png');
     background-size: 100%;
-    /* background-color: #00000072; */
+    background-color: #00000072;
     background-blend-mode: darken;
     background-attachment: fixed;
     background-position-y: 200%;
@@ -29,6 +23,13 @@ body{
     height: 90%;
 
     color: aliceblue;
+}
+
+.start img{
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    /* imag */
 }
 
 #scroll-jos{
