@@ -1,0 +1,44 @@
+.sageata{
+    
+}
+
+/* nimic important sus */
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: #16191d;
+    position: fixed;
+    top: 0%;
+}
+
+.start{
+    background-image: url("/imagini/sydney.jpg");
+    background-size: 100%;
+    /* background-color: #00000072; */
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position-y: 200%;
+
+    width: 100%;
+    height: 90%;
+
+    color: aliceblue;
+}
+
+#scroll-jos{
+    background-color: #000000;
+    height: 10%;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.istorie{
+    height: 50%;
+}
