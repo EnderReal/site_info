@@ -6,10 +6,11 @@ body{
 }
 
 .header{
-    height: 70px;
+    height: 65px;
     width: 100%;
     background-color: #16191d;
     position: fixed;
+    z-index: 100;
     top: 0%;
 }
 
@@ -23,7 +24,7 @@ body{
 
     cursor: default;
     
-    margin-top: 70px;
+    margin-top: 65px;
     width: 100%;
     height: 90%;
 
@@ -32,6 +33,7 @@ body{
 
 .start .titlu{
     text-align: center;
+    text-overflow: clip;
     font-size: 5em;
     /* font-family:'Montserrat', sans-serif;
     font-weight: 400;
@@ -44,8 +46,9 @@ body{
     color: #90CAF9;
 
     /* pare rau de asta */
+    white-space: nowrap;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: titlu-inapoi 1s;
@@ -110,8 +113,9 @@ body{
     height: 15%;
     color: aliceblue;
     text-align: center;
-    
+
 }
+
 .start .cerc{
     width:50px;
     height: 50px;
@@ -121,7 +125,9 @@ body{
     bottom: 3%;
     right: 1%;
 }
+/* IGNORAND CE ESTE SUS */
 
-.istorie{
-    height: 50%;
+.repr{
+    height: 60px;
+    text-align: center;
 }
