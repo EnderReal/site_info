@@ -1,20 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
     margin: 0px;
     overflow-x: hidden;
 }
 
-.header{
+.header {
     height: 65px;
     width: 100%;
     background-color: #16191d;
+    /* text-align: center; */
+
     position: fixed;
     z-index: 100;
     top: 0%;
+
+}
+.header .head-links {
+    width: 80%;
+    max-width: 1280px;
+    height: 100%;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header a,img {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.start{
+.start {
     background-image: url('../imagini/sydney.png');
     background-size: 100%;
     background-color: #000000a3;
@@ -23,7 +48,7 @@ body{
     background-position-y: 200%;
 
     cursor: default;
-    
+
     margin-top: 65px;
     width: 100%;
     height: 90%;
@@ -31,14 +56,25 @@ body{
     color: aliceblue;
 }
 
-.start .titlu{
+/* PENTRU O NOTITA NU E IMPORTANT */
+.start .ceva{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding-top: 5px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(50%, 0%);
+}
+
+.start .titlu {
     text-align: center;
     text-overflow: clip;
     font-size: 5em;
     /* font-family:'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     font-style: italic; */
-    font-family: "Alliance1","Alliance1HeaderFallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "Alliance1", "Alliance1HeaderFallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 800;
     letter-spacing: -0.01em;
     font-style: italic;
@@ -54,26 +90,30 @@ body{
     animation: titlu-inapoi 1s;
     animation-fill-mode: both;
 }
+
 /* eh nimic mai jos*/
-.start .titlu:hover{
+.start .titlu:hover {
     animation: titlu-inainte;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-@keyframes titlu-inainte{
-    to{
+
+@keyframes titlu-inainte {
+    to {
         font-size: 6em;
     }
 }
-@keyframes titlu-inapoi{
-    from{
+
+@keyframes titlu-inapoi {
+    from {
         font-size: 6em;
     }
 }
+
 /* nu a fost nimic acolo */
 
 
-.start .subtitlu{
+.start .subtitlu {
     text-align: center;
     font-size: 1.4em;
     font-style: italic;
@@ -86,19 +126,21 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.start .genuri{
+
+.start .genuri {
     width: 70%;
 
     /* iar pare rau trebuie asejare in pagina frumoasa */
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* apoi spatiere mai ok */
     display: flex;
     justify-content: space-around;
 }
-.start .genuri a{
+
+.start .genuri a {
     text-decoration: none;
     color: aliceblue;
     font-size: 1.3em;
@@ -107,17 +149,19 @@ body{
     font-weight: 500;
 }
 
-/* NEIMPORTANT DOAR DETALII */
-#scroll-jos{
+#scroll-jos {
     background-color: #000000;
-    height: 15%;
+    height: 100px;
+    line-height: 100px;
     color: aliceblue;
     text-align: center;
-
+    font-family:'Great Vibes', sans-serif;
+    font-size: 32px;
 }
 
-.start .cerc{
-    width:50px;
+/* NEIMPORTANT DOAR DETALII */
+.start .cerc {
+    width: 50px;
     height: 50px;
     background-color: aquamarine;
     border-radius: 50%;
@@ -125,9 +169,34 @@ body{
     bottom: 3%;
     right: 1%;
 }
+.start .cerc .linie {
+    width: 8px;
+    background-color: #000000;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.start .cerc .triunghi {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #000000;
+    font-size: 0;
+    line-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* IGNORAND CE ESTE SUS */
 
-.repr{
-    height: 60px;
+.repr {
+    background-color: #2d2d2d;
+    height: 80px;
+    line-height: 80px;
+    color: aliceblue;
     text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
