@@ -86,7 +86,7 @@ img {
     letter-spacing: -0.01em;
     font-style: italic;
 
-    color: #90CAF9;
+    color: #ffffff;
 
     /* pare rau de asta */
     white-space: nowrap;
@@ -189,7 +189,8 @@ img {
 
 /* PROP GENERALE PENTRU FIECARE CARD */
 .card {
-    height: 700px;
+    height: auto;
+    width: 100%;
     border-bottom: 20px solid aliceblue;
 
     display: flex;
@@ -197,6 +198,7 @@ img {
 
 .card>.stanga {
     width: 60%;
+    max-height: inherit;
     padding: 20% 0% 0% 0%;
     cursor: default;
 }
@@ -214,6 +216,7 @@ img {
     font-weight: 800;
     font-style: italic;
 
+    max-height: inherit;
     position: relative;
     top: -75%;
     left: -20%;
@@ -223,9 +226,10 @@ img {
     text-align: left;
     max-width: 70%;
 
+    text-indent: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
 
     position: relative;
@@ -308,9 +312,10 @@ img {
     background-color: #ffffff;
     border: 1px solid #c2c2c2;
     border-radius: 4px;
-    height: 10%;
-    width: 36%;
+    height: 75px;
+    width: 220px;
     border-radius: 12px;
+    padding: 20px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -328,3 +333,18 @@ img {
 
 /* PROP SPECIFICE PENTRU GENURILE CARDURILOR */
 
+.card#rock{
+    background-color: #5d6062;
+}
+.card#jazz{
+    background-color: #caad9f;
+}
+.card#pop{
+    background-color: #b0959b;
+}
+.card#clasic{
+    background-color: #adb5bd;
+}
+.card#folk{
+    background-color: #d3c0b3;
+}
