@@ -18,6 +18,7 @@ body {
     top: 0%;
 
 }
+
 .header .head-links {
     width: 80%;
     max-width: 1280px;
@@ -30,7 +31,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.header a,img {
+
+.header a,
+img {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -39,6 +42,7 @@ body {
     margin-bottom: auto;
 }
 
+/* IN PRINCIPAL PAGINA DE FRONT CU IMAGINEA */
 .start {
     background-image: url('../imagini/sydney.png');
     background-size: 100%;
@@ -57,14 +61,15 @@ body {
 }
 
 /* PENTRU O NOTITA NU E IMPORTANT */
-.start .ceva{
+.start .ceva {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     padding-top: 5px;
 
     position: relative;
     left: 50%;
-    transform: translate(50%, 0%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .start .titlu {
@@ -155,7 +160,7 @@ body {
     line-height: 100px;
     color: aliceblue;
     text-align: center;
-    font-family:'Great Vibes', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 32px;
 }
 
@@ -169,6 +174,7 @@ body {
     bottom: 3%;
     right: 1%;
 }
+
 .start .cerc .linie {
     width: 8px;
     background-color: #000000;
@@ -177,6 +183,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .start .cerc .triunghi {
     width: 0;
     height: 0;
@@ -188,6 +195,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* IGNORAND CE ESTE SUS */
 
 .repr {
@@ -196,7 +204,38 @@ body {
     line-height: 80px;
     color: aliceblue;
     text-align: center;
-    
+
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+/* PROP GENERALE PENTRU FIECARE CARD */
+.card {
+    height: 700px;
+    border: 2px solid black;
+
+    display: flex;
+}
+
+.card>.stanga {
+    width: 60%;
+    /* height: 700px; */
+    padding: 20% 0% 0% 0%;
+
+    /* background-color: aqua; */
+}
+
+.card>.dreapta {
+    width: 40%;
+    /* height: 100%; */
+
+    /* background-color: #555555; */
+}
+
+/* PROP SPECIFICE PENTRU GENURILE CARDURILOR */
+.card#rock .stanga {
+    background: #c7c7c7;
+    background-image: url(../imagini/beatles_gray.jpg);
+    background-size:cover;
+    backdrop-filter: opacity(0.5);
 }
