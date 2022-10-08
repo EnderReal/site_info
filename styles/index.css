@@ -65,11 +65,13 @@ img {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     padding-top: 5px;
+    text-align: center;
 
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    /* top: %; */
+    transform: translate(-50%, -0%);
 }
 
 .start .titlu {
@@ -92,31 +94,7 @@ img {
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: titlu-inapoi 1s;
-    animation-fill-mode: both;
 }
-
-/* eh nimic mai jos*/
-.start .titlu:hover {
-    animation: titlu-inainte;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-@keyframes titlu-inainte {
-    to {
-        font-size: 6em;
-    }
-}
-
-@keyframes titlu-inapoi {
-    from {
-        font-size: 6em;
-    }
-}
-
-/* nu a fost nimic acolo */
-
 
 .start .subtitlu {
     text-align: center;
@@ -212,30 +190,141 @@ img {
 /* PROP GENERALE PENTRU FIECARE CARD */
 .card {
     height: 700px;
-    border: 2px solid black;
+    border-bottom: 20px solid aliceblue;
 
     display: flex;
 }
 
 .card>.stanga {
     width: 60%;
-    /* height: 700px; */
     padding: 20% 0% 0% 0%;
-
-    /* background-color: aqua; */
+    cursor: default;
 }
 
 .card>.dreapta {
     width: 40%;
-    /* height: 100%; */
+    cursor: default;
+    background-color: #555555;
+}
 
-    /* background-color: #555555; */
+.card .stanga .titlu {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    font-style: italic;
+
+    position: relative;
+    top: -75%;
+    left: -20%;
+}
+
+.card .stanga .desc {
+    text-align: left;
+    max-width: 70%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+
+    position: relative;
+    transform: translate(20%, -90%);
+    top: -30%;
+}
+
+.card .stanga .subgenuri {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+
+    position: relative;
+    left: 14%;
+    top: -40%;
+}
+
+.card .stanga .subgenuri a {
+    text-decoration: none;
+}
+
+.card .dreapta>img {
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    object-fit: contain;
+}
+
+/* CASETA CU INFORMATIILE ARTISTULUI SA MUT MAI USOR ALEA */
+.card .dreapta .detl-artist {
+    width: 100%;
+    text-align: center;
+    /* background-color: aqua; */
+
+    position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.card .dreapta .detl-artist .nume {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.card .dreapta .detl-artist .rol {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 800;
+    padding: 4px;
+}
+
+.card .dreapta .detl-artist .descr {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    padding: 4px;
+
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    max-width: 70%;
+}
+
+.card .dreapta button {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    height: 10%;
+    width: 36%;
+    border-radius: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* PROP SPECIFICE PENTRU GENURILE CARDURILOR */
-.card#rock .stanga {
-    background: #c7c7c7;
-    background-image: url(../imagini/beatles_gray.jpg);
-    background-size:cover;
-    backdrop-filter: opacity(0.5);
-}
+
