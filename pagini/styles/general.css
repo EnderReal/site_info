@@ -1,14 +1,22 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
     margin: 0%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.header{
+.header {
     margin: 0%;
     padding: 0%;
     width: 100%;
     height: 130px;
-    border: 5px solid black;
+    border-bottom: 5px solid black;
+
+    /* color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px; */
 
     position: fixed;
     top: 0%;
@@ -16,31 +24,76 @@ body{
     border-collapse: collapse;
 }
 
-.header .buton-back{
+.header tr:nth-child(1) {
+    background-color: #16191d;
+}
+
+.header tr:nth-child(2){
+    background-color: #1f1f1f;
+}
+
+.header .buton-back {
     width: 100px;
     height: 50px;
 }
 
-.header .audio{
+/* PENTRU ACCESAREA CELULEI BUTONULUI */
+.header tr:nth-child(1) td:nth-child(1) {
     width: 100px;
 }
 
-.header .persoane{
+.header .titlu {
+    /* font-family: "Alliance1", "Alliance1HeaderFallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    font-style: italic;
+    font-size: 32px;
+    padding: 0px 25px 0px 25px;
+
+    width: 70%;
+}
+.header .titlu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header .subtitlu{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+}
+/* .header .audio{
+    width: 100px;
+} */
+
+.header .persoane {
     height: 70px;
 }
 
-.header td{
+.header marquee p{
+    margin: 0%;
+    padding: 0%;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header marquee img{
+    height: 70px;
+    width: 72px;
+    /* overflow: hidden; */
+}
+
+.header td {
     border: 2px solid black;
 }
 
-/* ASTA E DE TEST */
-.asasa{
-    height: 300%;
-    width: 100%;
-}
-
 /* SE POATE IGNORA CLASA DE JOS */
-.container{
+.container {
     margin-top: 130px;
     position: absolute;
     width: 100%;
@@ -50,47 +103,51 @@ body{
     left: 0%;
 }
 
-.stanga{
+.stanga {
     width: 15%;
     height: 100%;
     background-color: aqua;
-    
+
     position: absolute;
     top: 0%;
 }
 
-.stanga .linkuri{
+.stanga .linkuri {
     position: inherit;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
-.centru{
-    width: 70%;
+.centru {
+    width: 80%;
     height: 100%;
     /* background-color: black; */
 
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 0%;
-    transform: translate(-50%, 0%);    
+    transform: translate(-50%, 0%);
 }
 
-.dreapta{
-    width: 30%;
+.centru iframe{
+    border: 1px solid #000 !important;
+    overflow: scroll !important;
+    width: 82%;
+    height: 100%;
+}
+
+.dreapta {
+    width: 20%;
     height: 100%;
     background-color: aqua;
     right: 0%;
     top: 0%;
-    position:absolute;
+    position: absolute;
 }
 
-.dreapta iframe{
+.dreapta .caseta-dr {
     background-color: yellow;
-    
-    margin-top: 10%;
-    position: inherit;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    width: 300px;
+    height: 300px;
 }

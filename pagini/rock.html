@@ -1,4 +1,4 @@
-<html>
+<html lang="rou">
 
 <head>
     <title>Rock-ul</title>
@@ -12,14 +12,44 @@
             <td><button class="buton-back" onclick="location.href='../index.html'">
                     Inapoi
                 </button></td>
-            <td class="titlu">Rock-ul</td>
-            <td class="subtitul">country + blues</td>
-            <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td>
+            <td class="titlu"><a href="https://ro.wikipedia.org/wiki/Muzic%C4%83_rock" target="caseta-cen">Genul
+                    Rock</a></td>
+            <td class="subtitlu">Trecerea de la original la sub-genuri</td>
+            <!-- <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td> -->
         </tr>
         <tr>
             <td colspan="4" class="persoane">
-                <marquee>
-                    Poze cu aia care se misca
+                <!-- TO DO DUPA TOATE LINKURILE PUSE POTI BEA VIN -->
+                <marquee onmouseover="this.stop()" onmouseout="this.start()">
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/Serj_Tankian" target="caseta-cen">
+                            <img src="../imagini/artisti/serj_var1.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/The_Beatles" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/beatles.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Arctic_Monkeys" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/arctic.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/AC/DC" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/acdc.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Metallica" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/metal.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Kurt_Cobain" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/kurt.jpg">
+                        </a>
+                        
+                        <a href="https://en.wikipedia.org/wiki/Deftones" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/deftones.jpg">
+                        </a>
+                    </p>
                 </marquee>
             </td>
         </tr>
@@ -28,22 +58,20 @@
     <div class="container">
         <div class="stanga">
             <div class="linkuri">
-            <a href="#" >LINK</a><br>
-            <a href="#" >LINK</a><br>
-            <a href="#" >LINK</a><br>
-            <a href="#" >LINK</a><br>
-        </div>
+                <a href="#">LINK</a><br>
+                <a href="#">LINK</a><br>
+                <a href="#">LINK</a><br>
+                <a href="#">LINK</a><br>
+            </div>
             <!-- LINKURI YT -->
-
         </div>
         <div class="centru">
-            
+            <iframe class="caseta-cen" name="caseta-cen" src="https://ro.wikipedia.org/wiki/Muzic%C4%83_rock"></iframe>
         </div>
         <div class="dreapta">
-            <iframe width="300px" height="300px">
+            <iframe class="caseta-dr" name="caseta-dr">
         </div>
     </div>
-    <div class="asasa"></div>
 </body>
 
 </html>
