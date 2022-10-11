@@ -5,6 +5,7 @@
 body {
     margin: 0%;
     overflow: hidden;
+    cursor: default;
 }
 
 .header {
@@ -28,13 +29,23 @@ body {
     background-color: #16191d;
 }
 
-.header tr:nth-child(2){
+.header tr:nth-child(2) {
     background-color: #1f1f1f;
 }
 
 .header .buton-back {
+    cursor: pointer;
     width: 100px;
     height: 50px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+    border-radius: 24px;
+    border: 1px solid #c2c2c2;
 }
 
 /* PENTRU ACCESAREA CELULEI BUTONULUI */
@@ -53,27 +64,26 @@ body {
 
     width: 70%;
 }
-.header .titlu a{
+
+.header .titlu a {
     text-decoration: none;
     color: aliceblue;
+    cursor: pointer;
 }
 
-.header .subtitlu{
+.header .subtitlu {
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-style: italic;
     font-size: 24px;
 }
-/* .header .audio{
-    width: 100px;
-} */
 
 .header .persoane {
     height: 70px;
 }
 
-.header marquee p{
+.header marquee p {
     margin: 0%;
     padding: 0%;
 
@@ -82,7 +92,7 @@ body {
     justify-content: space-between;
 }
 
-.header marquee img{
+.header marquee img {
     height: 70px;
     width: 72px;
     /* overflow: hidden; */
@@ -101,53 +111,131 @@ body {
     height: calc(100% - 130px);
     top: 0%;
     left: 0%;
+
+    display: flex;
 }
 
 .stanga {
     width: 15%;
     height: 100%;
-    background-color: aqua;
+    background-color: #16191d;
+    padding: 30px;
 
-    position: absolute;
-    top: 0%;
+    /* position: absolute;
+    top: 0%; */
+}
+
+.stanga .titlu {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .stanga .linkuri {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #551a8b;
+
+    padding: 20px 0px 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.stanga .linkuri a {
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.stanga .sunet {
     position: inherit;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    top: 50%;
+    padding: 55% 0px 0px 0px;
+}
+
+.stanga .sunet .titlu {
+    margin-bottom: 20px;
+}
+
+.stanga .sunet audio {
+    max-width: 100%;
 }
 
 .centru {
-    width: 80%;
+    width: 65%;
+    /* width: max-content; */
     height: 100%;
-    /* background-color: black; */
+    background-color: black;
 
-    position: absolute;
-    left: 55%;
-    top: 0%;
-    transform: translate(-50%, 0%);
+    /* position: absolute;
+    left: 15%;
+    top: 0%; */
+    /* transform: translate(-50%, 0%); */
 }
 
-.centru iframe{
+.centru iframe {
     border: 1px solid #000 !important;
     overflow: scroll !important;
-    width: 82%;
+    width: 100%;
     height: 100%;
 }
 
 .dreapta {
     width: 20%;
     height: 100%;
-    background-color: aqua;
-    right: 0%;
+    background-color: #16191d;
+    /* right: 0%;
     top: 0%;
-    position: absolute;
+    position: absolute; */
 }
 
 .dreapta .caseta-dr {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-image: url();
     width: 300px;
     height: 300px;
+    max-width: 100%;
+    margin-top: 40px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: none;
+}
+
+.dreapta .linkuri {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.dreapta .linkuri {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    padding: 30% 0px 10px 10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dreapta .linkuri .titlu {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.dreapta .linkuri a {
+    margin-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-size: 18px;
+
+    text-decoration: none;
+    color: #551a8b;
+    font-weight: 500;
 }
