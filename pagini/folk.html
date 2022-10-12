@@ -1,9 +1,95 @@
-<html>
-    <head>
-        <title>Folk-ul</title>
-        <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
-    </head>
-    <body>
+<html lang="rou">
 
-    </body>
+<head>
+    <title>Folk-ul</title>
+    <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="./styles/general.css">
+</head>
+
+<body>
+    <table class="header">
+        <tr>
+            <td><button class="buton-back" onclick="location.href='../index.html'">
+                    Inapoi
+                </button></td>
+            <td class="titlu"><a href="https://ro.wikipedia.org/wiki/Muzic%C4%83_folk" target="caseta-cen">Genul
+                    Folk</a></td>
+            <td class="subtitlu">Muzica cu care am crescut</td>
+            <!-- <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td> -->
+        </tr>
+        <tr>
+            <td colspan="4" class="persoane">
+                <!-- TO DO DUPA TOATE LINKURILE PUSE POTI BEA VIN -->
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <p>
+                        <a href="https://ro.wikipedia.org/wiki/Doru_St%C4%83nculescu" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/doru.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Maria_Gheorghiu" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/maria.jpg">
+                        </a>
+
+                        <a href="https://bezna.eu/" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/adi.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Emeric_Imre" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/emeric.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Andrei_P%C4%83unescu" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/andrei.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Valeriu_Sterian" target="caseta-cen">
+                            <img src="../imagini/artisti/folk/sterian.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Mircea_Vintil%C4%83" target="caseta-cen">
+                            <img src="../imagini/artisti/rock/deftones.jpg">
+                        </a>
+                    </p>
+                </marquee>
+            </td>
+        </tr>
+    </table>
+    <!-- NU APRECIEZ TABELELE -->
+    <div class="container">
+        <div class="stanga">
+            <div class="titlu">
+                Subgenuri ale folk-ului
+            </div>
+            <div class="linkuri">
+                <a href="https://en.wikipedia.org/wiki/Alternative_metal" target="caseta-cen">Metal Alternativ</a>
+                <a href="https://en.wikipedia.org/wiki/Folk_rock" target="caseta-cen">Rock Folk</a>
+                <a href="https://en.wikipedia.org/wiki/Hard_rock" target="caseta-cen">Hard Rock</a>
+                <a href="https://en.wikipedia.org/wiki/Nu_metal" target="caseta-cen">Nu Metal</a>
+                <a href="https://en.wikipedia.org/wiki/Celtic_rock" target="caseta-cen">Rock Celtic</a>
+                <a href="https://en.wikipedia.org/wiki/Art_rock" target="caseta-cen">Art Rock</a>
+                <a href="https://en.wikipedia.org/wiki/Gothic_rock" target="caseta-cen">Rock Gotic</a>
+            </div>
+            <div class="sunet">
+                <div class="titlu">Pisă folk din<br>generatia nouă</div>
+                <audio controls src="./audio/folk.mp3"></audio>
+            </div>
+            <!-- LINKURI YT -->
+        </div>
+        <div class="centru">
+            <iframe class="caseta-cen" name="caseta-cen" src="https://ro.wikipedia.org/wiki/Muzic%C4%83_folk"></iframe>
+        </div>
+        <div class="dreapta">
+            <iframe class="caseta-dr" name="caseta-dr" src="https://www.youtube.com/embed/uobdz8_2VbQ"></iframe>
+            <div class="linkuri">
+                <div class="titlu">Piese ale genului</div>
+                <a href="https://www.youtube.com/embed/hTWKbfoikeg" target="caseta-dr">Nirvana</a>
+                <a href="https://www.youtube.com/embed/fJ9rUzIMcZQ" target="caseta-dr">Queen</a>
+                <a href="https://www.youtube.com/embed/0o4yv6Cm_ag" target="caseta-dr">Metallica</a>
+                <a href="https://www.youtube.com/embed/l482T0yNkeo" target="caseta-dr">AC/DC</a>
+                <a href="https://www.youtube.com/embed/CSvFpBOe8eY" target="caseta-dr">S.O.A.D</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
