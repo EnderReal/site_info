@@ -1,9 +1,95 @@
-<html>
-    <head>
-        <title>Pop-ul</title>
-        <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
-    </head>
-    <body>
+<html lang="rou">
 
-    </body>
+<head>
+    <title>Pop-ul</title>
+    <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="./styles/general.css">
+</head>
+
+<body>
+    <table class="header">
+        <tr>
+            <td><button class="buton-back" onclick="location.href='../index.html'">
+                    Inapoi
+                </button></td>
+            <td class="titlu"><a href="https://en.wikipedia.org/wiki/Pop_music" target="caseta-cen">Genul
+                    Pop</a></td>
+            <td class="subtitlu">Trecerea de la original la sub-genuri</td>
+            <!-- <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td> -->
+        </tr>
+        <tr>
+            <td colspan="4" class="persoane">
+                <!-- TO DO DUPA TOATE LINKURILE PUSE POTI BEA VIN -->
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/Mariah_Carey" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/mariah.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Smiley" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/smila.png">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Olivia_Addams" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/olivia.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Michael_Jackson" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/jackson.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Inna" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/inna.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Cheloo" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/cheloo.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/The_Weeknd" target="caseta-cen">
+                            <img src="../imagini/artisti/pop/week.jpg">
+                        </a>
+                    </p>
+                </marquee>
+            </td>
+        </tr>
+    </table>
+    <!-- NU APRECIEZ TABELELE -->
+    <div class="container">
+        <div class="stanga">
+            <div class="titlu">
+                Subgenuri ale pop-ului
+            </div>
+            <div class="linkuri">
+                <a href="https://en.wikipedia.org/wiki/Post-disco" target="caseta-cen">Pop Post-Disco</a>
+                <a href="https://en.wikipedia.org/wiki/Art_pop" target="caseta-cen">Art Pop</a>
+                <a href="https://en.wikipedia.org/wiki/Pop_rock" target="caseta-cen">Pop Rock</a>
+                <a href="https://en.wikipedia.org/wiki/Progressive_pop" target="caseta-cen">Pop Progresiv</a>
+                <a href="https://en.wikipedia.org/wiki/K-pop" target="caseta-cen">K-Pop</a>
+                <a href="https://en.wikipedia.org/wiki/Manele" target="caseta-cen">Pop-Folk > Manele</a>
+                <a href="https://ro.wikipedia.org/wiki/Muzic%C4%83_popular%C4%83" target="caseta-cen">Pop-Folk > Populară</a>
+            </div>
+            <div class="sunet">
+                <div class="titlu">Cea mai populară<br>piesă pop</div>
+                <audio controls src="./audio/pop.mp3"></audio>
+            </div>
+            <!-- LINKURI YT -->
+        </div>
+        <div class="centru">
+            <iframe class="caseta-cen" name="caseta-cen" src="https://en.wikipedia.org/wiki/Pop_music"></iframe>
+        </div>
+        <div class="dreapta">
+            <iframe class="caseta-dr" name="caseta-dr" src="https://www.youtube.com/embed/NxxjLD2pmlk"></iframe>
+            <div class="linkuri">
+                <div class="titlu">Piese ale genului</div>
+                <a href="https://www.youtube.com/embed/LCCoyWbKMl8" target="caseta-dr">Smiley</a>
+                <a href="https://www.youtube.com/embed/Ykdr0sIrFrY" target="caseta-dr">Inna</a>
+                <a href="https://www.youtube.com/embed/M4ZoCHID9GI" target="caseta-dr">The Weekend</a>
+                <a href="https://www.youtube.com/embed/Hat1Hc9SNwE" target="caseta-dr">Mariah Carey</a>
+                <a href="https://www.youtube.com/embed/Wsx2-mksdG4" target="caseta-dr">Olivia Addams</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

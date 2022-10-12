@@ -1,9 +1,95 @@
-<html>
-    <head>
-        <title>Jazz-ul</title>
-        <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
-    </head>
-    <body>
+<html lang="rou">
 
-    </body>
+<head>
+    <title>Jazz-ul</title>
+    <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="./styles/general.css">
+</head>
+
+<body>
+    <table class="header">
+        <tr>
+            <td><button class="buton-back" onclick="location.href='../index.html'">
+                    Inapoi
+                </button></td>
+            <td class="titlu"><a href="https://ro.wikipedia.org/wiki/Jazz" target="caseta-cen">Genul
+                    Jazz</a></td>
+            <td class="subtitlu">Trecerea de la original la sub-genuri</td>
+            <!-- <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td> -->
+        </tr>
+        <tr>
+            <td colspan="4" class="persoane">
+                <!-- TO DO DUPA TOATE LINKURILE PUSE POTI BEA VIN -->
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <p>
+                        <a href="https://en.wikipedia.org/wiki/Ray_Charles" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/ray.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Miles_Davis" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/davis.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Louis_Armstrong" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/louis.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Bill_Evans" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/bill.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Bob_James_(musician)" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/bob.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Ella_Fitzgerald" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/ella.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Charles_Lloyd_(jazz_musician)" target="caseta-cen">
+                            <img src="../imagini/artisti/jazz/lloyd.jpg">
+                        </a>
+                    </p>
+                </marquee>
+            </td>
+        </tr>
+    </table>
+    <!-- NU APRECIEZ TABELELE -->
+    <div class="container">
+        <div class="stanga">
+            <div class="titlu">
+                Subgenuri ale jazz-ului
+            </div>
+            <div class="linkuri">
+                <a href="https://en.wikipedia.org/wiki/Early_Jazz:_Its_Roots_and_Musical_Development" target="caseta-cen">Early Jazz</a>
+                <a href="https://en.wikipedia.org/wiki/Latin_jazz" target="caseta-cen">Jazz Latin</a>
+                <a href="https://en.wikipedia.org/wiki/Jazz" target="caseta-cen">Jazz Modern</a>
+                <a href="https://en.wikipedia.org/wiki/Free_jazz" target="caseta-cen">Jazz Liber</a>
+                <a href="https://en.wikipedia.org/wiki/Blues" target="caseta-cen">Blues</a>
+                <a href="https://en.wikipedia.org/wiki/Gypsy_jazz" target="caseta-cen">Jazz Ţigănesc</a>
+                <a href="https://en.wikipedia.org/wiki/Bebop" target="caseta-cen">Bebop</a>
+            </div>
+            <div class="sunet">
+                <div class="titlu">Exemplu de jazz usor</div>
+                <audio controls src="./audio/jazz.mp3"></audio>
+            </div>
+            <!-- LINKURI YT -->
+        </div>
+        <div class="centru">
+            <iframe class="caseta-cen" name="caseta-cen" src="https://ro.wikipedia.org/wiki/Jazz"></iframe>
+        </div>
+        <div class="dreapta">
+            <iframe class="caseta-dr" name="caseta-dr" src="https://www.youtube.com/embed/xHAfhPrrKHA"></iframe>
+            <div class="linkuri">
+                <div class="titlu">Piese ale genului</div>
+                <a href="https://www.youtube.com/embed/h3kQt14_5OQ" target="caseta-dr">Miles Davis</a>
+                <a href="https://www.youtube.com/embed/c5QfXjsoNe4" target="caseta-dr">Stan Getz</a>
+                <a href="https://www.youtube.com/embed/djZCe7ou3kY" target="caseta-dr">Louis Armstrong</a>
+                <a href="https://www.youtube.com/embed/4pgfbOoUBso" target="caseta-dr">Charlie Parker</a>
+                <a href="https://www.youtube.com/embed/kCDMQqDUtv4" target="caseta-dr">Eddie Harris</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

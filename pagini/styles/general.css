@@ -138,14 +138,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #551a8b;
-
+    
     padding: 20px 0px 10px 20px;
-
+    
     display: flex;
     flex-direction: column;
 }
 
 .stanga .linkuri a {
+    color: #551a8b;
     padding-bottom: 10px;
     text-decoration: none;
 }
