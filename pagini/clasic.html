@@ -1,9 +1,94 @@
-<html>
-    <head>
-        <title>Clasic-ul</title>
-        <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
-    </head>
-    <body>
+<html lang="rou">
 
-    </body>
+<head>
+    <title>Muzica Clasică</title>
+    <link rel="icon" type="image/png" href="../imagini/favicon-32.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="./styles/general.css">
+</head>
+
+<body>
+    <table class="header">
+        <tr>
+            <td><button class="buton-back" onclick="location.href='../index.html'">
+                    Inapoi
+                </button></td>
+            <td class="titlu"><a href="https://en.wikipedia.org/wiki/Classical_music" target="caseta-cen">Muzica Clasică</a></td>
+            <td class="subtitlu">De la original al sub-genuri</td>
+            <!-- <td class="audio"><audio controls src="./audio/rock.ogg" type="audio/mpeg"></audio></td> -->
+        </tr>
+        <tr>
+            <td colspan="4" class="persoane">
+                <!-- TO DO DUPA TOATE LINKURILE PUSE POTI BEA VIN -->
+                <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                    <p>
+                        <a href="https://ro.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/mozart.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/beethoven.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/chopin.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Piotr_Ilici_Ceaikovski" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/ceaikovski.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Antonio_Vivaldi" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/vivaldi.jpg">
+                        </a>
+
+                        <a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/verdi.jpg">
+                        </a>
+
+                        <a href="https://ro.wikipedia.org/wiki/Johannes_Brahms" target="caseta-cen">
+                            <img src="../imagini/artisti/clasic/brahms.jpg">
+                        </a>
+                    </p>
+                </marquee>
+            </td>
+        </tr>
+    </table>
+    <!-- NU APRECIEZ TABELELE -->
+    <div class="container">
+        <div class="stanga">
+            <div class="titlu">
+                Subgenuri ale muzicii clasice
+            </div>
+            <div class="linkuri">
+                <a href="https://en.wikipedia.org/wiki/Opera" target="caseta-cen">Opera</a>
+                <a href="https://en.wikipedia.org/wiki/Sonata" target="caseta-cen">Sonata</a>
+                <a href="https://en.wikipedia.org/wiki/Waltz_(music)" target="caseta-cen">Vals</a>
+                <a href="https://en.wikipedia.org/wiki/March_(music)" target="caseta-cen">Marşul</a>
+                <a href="https://ro.wikipedia.org/wiki/Sonat%C4%83" target="caseta-cen">Sonata</a>
+                <a href="https://ro.wikipedia.org/wiki/Balad%C4%83" target="caseta-cen">Balada</a>
+                <a href="https://en.wikipedia.org/wiki/Rapsody" target="caseta-cen">Rapsodia</a>
+            </div>
+            <div class="sunet">
+                <div class="titlu">Romeo si Julieta<br>Dansul Cavalerilor</div>
+                <audio controls src="./audio/clasic.mp3"></audio>
+            </div>
+            <!-- LINKURI YT -->
+        </div>
+        <div class="centru">
+            <iframe class="caseta-cen" name="caseta-cen" src="https://en.wikipedia.org/wiki/Classical_music"></iframe>
+        </div>
+        <div class="dreapta">
+            <iframe class="caseta-dr" name="caseta-dr" src="https://www.youtube.com/embed/_mVW8tgGY_w"></iframe>
+            <div class="linkuri">
+                <div class="titlu">Piese ale genului</div>
+                <a href="https://www.youtube.com/embed/ho9rZjlsyYY" target="caseta-dr">Bach</a>
+                <a href="https://www.youtube.com/embed/-VVXqNt4qU0" target="caseta-dr">Beethoven</a>
+                <a href="https://www.youtube.com/embed/GRxofEmo3HA" target="caseta-dr">Vivaldi</a>
+                <a href="https://www.youtube.com/embed/_CTYymbbEL4" target="caseta-dr">Strauss II</a>
+                <a href="https://www.youtube.com/embed/4nMUr8Rt2AI" target="caseta-dr">Crieg</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
