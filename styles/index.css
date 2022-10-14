@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -220,6 +220,8 @@ img {
     font-weight: 800;
     font-style: italic;
 
+    color: #ffffff;
+
     max-height: inherit;
     position: relative;
     top: -75%;
@@ -236,6 +238,8 @@ img {
     font-weight: 500;
     font-style: italic;
 
+    color: #ffffff;
+
     position: relative;
     transform: translate(20%, -90%);
     top: -30%;
@@ -246,6 +250,8 @@ img {
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
+    
+    color: #ffffff;
 
     position: relative;
     left: 14%;
@@ -254,6 +260,7 @@ img {
 
 .card .stanga .subgenuri a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .card .dreapta>img {
@@ -337,18 +344,42 @@ img {
 
 /* PROP SPECIFICE PENTRU GENURILE CARDURILOR */
 
-.card#rock{
-    background-color: #5d6062;
+.card#rock {
+    background-color: #a3b2ad;
+
+    background-image: url(../imagini/back-card/back1.jpg);
+    background-size: contain;
+    background-blend-mode:difference;
 }
-.card#jazz{
-    background-color: #caad9f;
+
+.card#jazz {
+    background-color: #458c99;
+
+    background-image: url(../imagini/back-card/back2.jpg);
+    background-size: contain;
+    background-blend-mode:difference;
 }
-.card#pop{
-    background-color: #b0959b;
+
+.card#pop {
+    background-color: #b6d9ba;
+
+    background-image: url(../imagini/back-card/back3.jpg);
+    background-size: contain;
+    background-blend-mode: difference;
 }
-.card#clasic{
-    background-color: #adb5bd;
+
+.card#clasic {
+    background-color: #696969;
+
+    background-image: url(../imagini/back-card/back1.jpg);
+    background-size: contain;
+    background-blend-mode: difference;
 }
-.card#folk{
-    background-color: #d3c0b3;
+
+.card#folk {
+    background-color: #463539;
+
+    background-image: url(../imagini/back-card/back3.jpg);
+    background-size: contain;
+    background-blend-mode:difference;
 }
