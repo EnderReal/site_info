@@ -121,8 +121,10 @@ body {
     background-color: #16191d;
     padding: 30px;
 
-    /* position: absolute;
-    top: 0%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .stanga .titlu {
@@ -151,11 +153,11 @@ body {
     text-decoration: none;
 }
 
-.stanga .sunet {
+/* .stanga .sunet {
     position: inherit;
     top: 50%;
     padding: 55% 0px 0px 0px;
-}
+} */
 
 .stanga .sunet .titlu {
     margin-bottom: 20px;
@@ -167,7 +169,6 @@ body {
 
 .centru {
     width: 65%;
-    /* width: max-content; */
     height: 100%;
     background-color: black;
 
@@ -188,6 +189,12 @@ body {
     width: 20%;
     height: 100%;
     background-color: #16191d;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
     /* right: 0%;
     top: 0%;
     position: absolute; */
@@ -201,9 +208,9 @@ body {
     max-width: 100%;
     margin-top: 40px;
 
-    position: relative;
+    /* position: relative;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); */
     border: none;
 }
 
@@ -212,13 +219,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 300;
-
+    
 }
 
 .dreapta .linkuri {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    padding: 30% 0px 10px 10%;
+    padding: 30% 0px 0px 0%;
 
     display: flex;
     flex-direction: column;
@@ -231,7 +238,7 @@ body {
 }
 
 .dreapta .linkuri a {
-    margin-left: 20px;
+    margin-left: 10px;
     padding-bottom: 5px;
     padding-top: 10px;
     font-size: 18px;
