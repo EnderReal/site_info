@@ -114,6 +114,8 @@ img {
     transform: translate(-50%, -50%);
 }
 
+/* CSF */
+
 .start .genuri {
     width: 70%;
 
@@ -147,6 +149,7 @@ img {
 }
 
 /* NEIMPORTANT DOAR DETALII */
+
 .start .cerc {
     width: 50px;
     height: 50px;
@@ -192,13 +195,29 @@ img {
 }
 
 /* PROP GENERALE PENTRU FIECARE CARD */
+
 .card {
     height: 700px;
     width: 100%;
     border-bottom: 20px solid aliceblue;
 
     display: flex;
+
+    /* ASTA FACE FUNDAL BUN PENTRU 1080P */
+    background-size: contain;
+    background-blend-mode: difference;
 }
+
+/* ASTA AICI FUNDAL BUN SI PE TELEFON*/
+
+@media only screen and (max-width: 1120px) {
+    .card {
+      background-size: cover;
+    }
+  }
+
+/* PENTRU TE ROG EU GASESTE O SOLUTIE LA FLEX */
+/* BRAVO */
 
 .card>.stanga {
     width: 60%;
@@ -256,13 +275,15 @@ img {
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
-    
+
     color: #ffffff;
 
     /* position: relative;
     left: 14%;
     top: -40%; */
 }
+
+/* POATE CULORI MAI SUGESTIVE */
 
 .card .stanga .subgenuri a {
     text-decoration: none;
@@ -354,38 +375,28 @@ img {
     background-color: #a3b2ad;
 
     background-image: url(../imagini/back-card/back1.jpg);
-    background-size: contain;
-    background-blend-mode:difference;
 }
 
 .card#jazz {
     background-color: #458c99;
 
     background-image: url(../imagini/back-card/back2.jpg);
-    background-size: contain;
-    background-blend-mode:difference;
 }
 
 .card#pop {
     background-color: #b6d9ba;
 
     background-image: url(../imagini/back-card/back3.jpg);
-    background-size: contain;
-    background-blend-mode: difference;
 }
 
 .card#clasic {
     background-color: #696969;
 
     background-image: url(../imagini/back-card/back1.jpg);
-    background-size: contain;
-    background-blend-mode: difference;
 }
 
 .card#folk {
     background-color: #463539;
 
     background-image: url(../imagini/back-card/back3.jpg);
-    background-size: contain;
-    background-blend-mode:difference;
 }
