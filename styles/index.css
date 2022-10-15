@@ -193,7 +193,7 @@ img {
 
 /* PROP GENERALE PENTRU FIECARE CARD */
 .card {
-    height: auto;
+    height: 700px;
     width: 100%;
     border-bottom: 20px solid aliceblue;
 
@@ -202,9 +202,15 @@ img {
 
 .card>.stanga {
     width: 60%;
+    height: 100%;
     max-height: inherit;
-    padding: 20% 0% 0% 0%;
+    /* padding: 20% 0% 0% 0%; */
+    padding: 0% 0% 0% 6%;
     cursor: default;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .card>.dreapta {
@@ -214,7 +220,7 @@ img {
 }
 
 .card .stanga .titlu {
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
     font-weight: 800;
@@ -222,10 +228,10 @@ img {
 
     color: #ffffff;
 
-    max-height: inherit;
+    /* max-height: inherit;
     position: relative;
     top: -75%;
-    left: -20%;
+    left: -20%; */
 }
 
 .card .stanga .desc {
@@ -240,9 +246,9 @@ img {
 
     color: #ffffff;
 
-    position: relative;
+    /* position: relative;
     transform: translate(20%, -90%);
-    top: -30%;
+    top: -30%; */
 }
 
 .card .stanga .subgenuri {
@@ -253,9 +259,9 @@ img {
     
     color: #ffffff;
 
-    position: relative;
+    /* position: relative;
     left: 14%;
-    top: -40%;
+    top: -40%; */
 }
 
 .card .stanga .subgenuri a {
